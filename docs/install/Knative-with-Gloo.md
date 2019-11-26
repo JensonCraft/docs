@@ -88,7 +88,7 @@ simplifies things to have DNS properly configured. For this, we must look up the
 external IP address that Gloo received. This can be done with the following command:
 
 ```
-$ kubectl get svc -ngloo-system
+$ kubectl get svc -n gloo-system
 NAME                     TYPE           CLUSTER-IP    EXTERNAL-IP    PORT(S)                      AGE
 gloo                     ClusterIP      10.0.11.200   <none>         9977/TCP                     9m50s
 knative-external-proxy   LoadBalancer   10.0.15.230   34.83.80.117   80:30351/TCP,443:30157/TCP   9m50s
